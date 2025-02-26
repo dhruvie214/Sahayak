@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volunteer Network"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Google Maps Button -->
+    <Button
+        android:id="@+id/mapsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Nearby Volunteers"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView for Volunteer List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapsButton"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"/>
+
+    <!-- Registration Section -->
+    <LinearLayout
+        android:id="@+id/registerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerView"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register as a Volunteer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/skillsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Skills (e.g., First Aid, Rescue)"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Yourself"
+            android:textSize="16sp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>

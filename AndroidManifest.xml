@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sahayakapp">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SahayakAPP"
+        tools:targetApi="31">
+
+        <!-- Splash Screen (Launch Activity) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Login & Registration -->
+        <activity android:name=".LoginActivity" android:exported="true"/>
+        <activity android:name=".RegisterActivity" android:exported="true"/>
+
+        <!-- Main Dashboard -->
+        <activity android:name=".DashboardActivity" android:exported="true"/>
+
+        <!-- Core Functionalities -->
+        <activity android:name=".EmergencyActivity" android:exported="true"/>
+        <activity android:name=".VolunteerActivity" android:exported="true"/>
+        <activity android:name=".CommunityBoardActivity" android:exported="true"/>
+        <activity android:name=".WeatherTrafficActivity" android:exported="true"/>
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SahayakAPP</string>
+
+    <!-- Volunteer Skills Dropdown Options -->
+    <string-array name="skills_array">
+        <item>First Aid</item>
+        <item>Medical Assistance</item>
+        <item>Rescue Operations</item>
+        <item>Disaster Management</item>
+        <item>Community Support</item>
+        <item>Food Distribution</item>
+        <item>Technical Support</item>
+    </string-array>
+</resources>
