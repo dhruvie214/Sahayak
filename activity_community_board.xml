@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@android:color/white">
+    android:background="@drawable/gradient_splash">
 
     <EditText
         android:id="@+id/postEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:hint="Write something..."
         android:padding="12dp"
-        android:background="@android:color/white"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
 
     <ImageView
         android:id="@+id/selectedImage"
@@ -21,29 +24,32 @@
         android:layout_height="200dp"
         android:scaleType="centerCrop"
         android:visibility="gone"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/selectImageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Image"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Select Image"
         android:textColor="@android:color/white"
-        android:layout_marginTop="8dp"/>
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/postButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Post"
         android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Post"
         android:textColor="@android:color/white"
-        android:layout_marginTop="8dp"/>
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>
