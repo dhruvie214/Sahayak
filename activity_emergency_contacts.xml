@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@android:color/white">
+    android:background="@drawable/gradient_splash">
 
     <TextView
         android:id="@+id/titleText"
@@ -29,10 +31,10 @@
             android:id="@+id/cardPolice"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +46,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/police"/>
+                    android:src="@android:drawable/ic_menu_call"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,10 +64,10 @@
             android:id="@+id/cardFire"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -77,7 +79,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/fire"/>
+                    android:src="@android:drawable/ic_menu_manage"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -95,10 +97,10 @@
             android:id="@+id/cardAmbulance"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -110,7 +112,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/ambulance"/>
+                    android:src="@android:drawable/ic_menu_info_details"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -128,10 +130,10 @@
             android:id="@+id/cardWomenHelpline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -143,7 +145,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/women_helpline"/>
+                    android:src="@android:drawable/ic_menu_help"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -161,7 +163,6 @@
         android:id="@+id/findSafeZonesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/emergencyGrid"
         android:layout_marginTop="24dp"
         android:text="Find Nearest Safe Zone"
         android:textSize="18sp"
@@ -172,7 +173,6 @@
         android:id="@+id/shareLocationButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/findSafeZonesButton"
         android:layout_marginTop="16dp"
         android:text="Send Live Location"
         android:textSize="18sp"
