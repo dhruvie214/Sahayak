@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".WeatherTrafficActivity"
-    android:background="@android:color/white">
+    android:background="@drawable/gradient_splash">
 
     <TextView
         android:id="@+id/tvWeather"
@@ -16,11 +16,17 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:padding="8dp"
+        android:gravity="center"
         android:textColor="@android:color/black" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="8dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+    </FrameLayout>
 </LinearLayout>
