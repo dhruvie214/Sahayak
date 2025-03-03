@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/gradient_splash"
     tools:context=".DashboardActivity">
 
     <TextView
@@ -24,7 +25,7 @@
         android:layout_below="@id/welcomeMessage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:src=@drawable//>
+        android:src="@android:drawable/ic_menu_myplaces"/>
 
     <GridLayout
         android:id="@+id/dashboardGrid"
@@ -33,7 +34,6 @@
         android:layout_below="@id/userProfile"
         android:layout_marginTop="32dp"
         android:columnCount="2"
-        android:rowCount="2"
         android:padding="16dp"
         android:layout_margin="16dp">
 
@@ -42,11 +42,10 @@
             android:id="@+id/cardEmergencyContacts"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,7 +57,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/emergency_contacts"/>
+                    android:src="@android:drawable/ic_menu_call"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -76,11 +75,10 @@
             android:id="@+id/cardVolunteerNetwork"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -92,7 +90,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/volunteer"/>
+                    android:src="@android:drawable/ic_menu_compass"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -110,11 +108,10 @@
             android:id="@+id/cardCommunityBoard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -126,7 +123,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/community"/>
+                    android:src="@android:drawable/ic_menu_edit"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,11 +141,10 @@
             android:id="@+id/cardWeatherTraffic"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:layout_columnSpan="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -160,14 +156,14 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/weather_traffic"/>
+                    android:src="@android:drawable/ic_menu_mapmode"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Weather & Traffic"
+                    android:text="Weather &amp; Traffic"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"/>
             </LinearLayout>
